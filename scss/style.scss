@@ -116,17 +116,20 @@ body {
     .text-content {
       h1,
       h2 {
-        font-size: 3rem;
+        font-size: clamp(1rem, 0.8rem + 1vw, 2rem);
       }
       p {
         text-align: center;
         font-size: 1.5rem;
+        align-self: center;
+        width: 56rem;
       }
     }
   }
   .grid {
     .card {
       padding: 3rem 3rem;
+      width: 25rem;
     }
     display: grid;
     grid-template-columns: repeat(3, 1fr);
